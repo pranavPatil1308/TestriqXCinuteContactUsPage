@@ -6,6 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
@@ -16,8 +19,9 @@ public class test1 {
 	public static WebDriverWait wait;
 	@BeforeMethod
 	public void setup() {
-
-	driver=new ChromeDriver() ;
+		ChromeOptions options =  new ChromeOptions();
+		options.addArguments("--headless");
+		driver=new ChromeDriver(options) ;
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	driver.get("https://cinutedigital.com/contact-us/");
@@ -38,17 +42,19 @@ public class test1 {
 		s.selectByIndex(3);
 		WebElement next = driver.findElement(By.xpath("(//button[@class='btn btn-primary btn-next'])[1]"));
 		next.click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
-		WebElement dropdown1 = driver.findElement(By.id("education"));
-		Select w = new Select (dropdown1);
-		w.selectByIndex(3);
+		  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		  WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("education")));		
+		  Select w = new Select (element);
+		  w.selectByIndex(3);
+		
 		WebElement certificate = driver.findElement(By.id("certifications"));
 		certificate.sendKeys("Java, C++");
-		WebElement checkbox = driver.findElement(By.xpath("(//input[@class='form-check-input course-checkbox'])[11]"));
+		WebElement checkbox = driver.findElement(By.xpath("(//input[@class='form-check-input course-checkbox'])[5]"));
 		checkbox.click();
+		Actions act = new Actions(driver);
 		WebElement next1 = driver.findElement(By.xpath("(//button[@class='btn btn-primary btn-next'])[2]"));
-		next1.click();
+		act.moveToElement(next1).click().perform();
 		
 		WebElement startCourse = driver.findElement(By.id("startDay"));
 		Select d = new Select (startCourse);
@@ -65,8 +71,8 @@ public class test1 {
 		WebElement comments = driver.findElement(By.xpath("//textarea[@class='form-control']"));
 		comments.sendKeys("Thank you");
 		WebElement submitButton = driver.findElement(By.xpath("//button[@class='btn btn-success btn-submit']"));
-		submitButton.click();
-		driver.quit();
+		//submitButton.click();
+	//	driver.quit();
 	
 }
 }
