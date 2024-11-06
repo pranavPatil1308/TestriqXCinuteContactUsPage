@@ -71,8 +71,8 @@ public class test1 {
 		WebElement comments = driver.findElement(By.xpath("//textarea[@class='form-control']"));
 		comments.sendKeys("Thank you");
 		WebElement submitButton = driver.findElement(By.xpath("//button[@class='btn btn-success btn-submit']"));
-		//submitButton.click();
-	//	driver.quit();
+		submitButton.click();
+		driver.quit();
 	
 }
 }
