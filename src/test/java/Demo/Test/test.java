@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -22,7 +23,9 @@ public static WebDriverWait wait;
 	@BeforeMethod
 	public void setup() {
 //		System.setProperty("webdriver.chrome.driver", "C:\\Users\\L-51\\eclipse-workspace\\Test\\src\\main\\java\\Demo\\Test\\chromedriver.exe");
-		driver=new ChromeDriver() ;
+		ChromeOptions options =  new ChromeOptions();
+		options.addArguments("--headless");
+		driver=new ChromeDriver(options) ;
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://testriq.com/contact-us");
