@@ -148,10 +148,10 @@
 Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7aaa7db61e9a96648b387ab83632388f, clickElement {id=f.E7F27313B76B697A068F9238C97EF193.d.B7EBA0CEA0D9FB73DC701359E55E7549.e.231}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52463}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52463/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (7aaa7db61e9a96648b387ab83632388f)] -&gt; id: education]] -&gt; tag name: option]
-Session ID: 7aaa7db61e9a96648b387ab83632388f
+Command: [6c021554b1c66f0aad2d020fabfb067a, clickElement {id=f.5E42656E6E712AE811F67D053DFE16E3.d.9E18B8386C99F09DA3892454DD1E55FE.e.230}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53150}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53150/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (6c021554b1c66f0aad2d020fabfb067a)] -&gt; id: education]] -&gt; xpath: .//option[normalize-space(.) = &quot;Graduate&quot;]]
+Session ID: 6c021554b1c66f0aad2d020fabfb067a
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -162,8 +162,7 @@ Session ID: 7aaa7db61e9a96648b387ab83632388f
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
 	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:315)
-	at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:299)
-	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:179)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:119)
 	at Demo.Test.test1.demoTesttwo(test1.java:49)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 32 stack frames
@@ -244,11 +243,11 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'demoTest')
 data.setCell(0, 2, 'Demo.Test.test')
-data.setCell(0, 3, 7486);
+data.setCell(0, 3, 7566);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'demoTesttwo')
 data.setCell(1, 2, 'Demo.Test.test1')
-data.setCell(1, 3, 651);
+data.setCell(1, 3, 740);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -288,18 +287,18 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">demoTesttwo</span>
-                <span class="method-start">3231 ms</span>
+                <span class="method-start">2071 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Demo.Test.test</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">3888 ms</span>
+                <span class="method-start">2817 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">demoTest</span>
-                <span class="method-start">6550 ms</span>
+                <span class="method-start">5940 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

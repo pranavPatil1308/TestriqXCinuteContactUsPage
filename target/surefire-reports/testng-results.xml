@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-11T16:15:04 IST" name="Suite" finished-at="2024-11-11T16:15:18 IST" duration-ms="14056">
+  <suite started-at="2024-11-12T09:43:52 IST" name="Suite" finished-at="2024-11-12T09:44:05 IST" duration-ms="13529">
     <groups>
     </groups>
-    <test started-at="2024-11-11T16:15:04 IST" name="Test" finished-at="2024-11-11T16:15:18 IST" duration-ms="14056">
+    <test started-at="2024-11-12T09:43:52 IST" name="Test" finished-at="2024-11-12T09:44:05 IST" duration-ms="13529">
       <class name="Demo.Test.test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Demo.Test.test@9353778]" started-at="2024-11-11T16:15:08 IST" name="setup" finished-at="2024-11-11T16:15:11 IST" duration-ms="2661" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Demo.Test.test@9353778]" started-at="2024-11-12T09:43:55 IST" name="setup" finished-at="2024-11-12T09:43:58 IST" duration-ms="3123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="demoTest()[pri:0, instance:Demo.Test.test@9353778]" started-at="2024-11-11T16:15:11 IST" name="demoTest" finished-at="2024-11-11T16:15:18 IST" duration-ms="7486" status="PASS">
+        <test-method signature="demoTest()[pri:0, instance:Demo.Test.test@9353778]" started-at="2024-11-12T09:43:58 IST" name="demoTest" finished-at="2024-11-12T09:44:05 IST" duration-ms="7566" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demoTest -->
       </class> <!-- Demo.Test.test -->
       <class name="Demo.Test.test1">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Demo.Test.test1@47d90b9e]" started-at="2024-11-11T16:15:04 IST" name="setup" finished-at="2024-11-11T16:15:07 IST" duration-ms="3231" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Demo.Test.test1@47d90b9e]" started-at="2024-11-12T09:43:52 IST" name="setup" finished-at="2024-11-12T09:43:54 IST" duration-ms="2070" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="demoTesttwo()[pri:1, instance:Demo.Test.test1@47d90b9e]" started-at="2024-11-11T16:15:07 IST" name="demoTesttwo" finished-at="2024-11-11T16:15:08 IST" duration-ms="651" status="FAIL">
+        <test-method signature="demoTesttwo()[pri:1, instance:Demo.Test.test1@47d90b9e]" started-at="2024-11-12T09:43:54 IST" name="demoTesttwo" finished-at="2024-11-12T09:43:54 IST" duration-ms="740" status="FAIL">
           <exception class="org.openqa.selenium.JavascriptException">
             <message>
               <![CDATA[javascript error: {"status":11,"value":"Element is not currently visible and may not be manipulated"}
@@ -29,10 +29,10 @@
 Build info: version: '4.12.0', revision: '249f2a7d1b*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7aaa7db61e9a96648b387ab83632388f, clickElement {id=f.E7F27313B76B697A068F9238C97EF193.d.B7EBA0CEA0D9FB73DC701359E55E7549.e.231}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52463}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52463/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (7aaa7db61e9a96648b387ab83632388f)] -> id: education]] -> tag name: option]
-Session ID: 7aaa7db61e9a96648b387ab83632388f]]>
+Command: [6c021554b1c66f0aad2d020fabfb067a, clickElement {id=f.5E42656E6E712AE811F67D053DFE16E3.d.9E18B8386C99F09DA3892454DD1E55FE.e.230}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53150}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53150/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (6c021554b1c66f0aad2d020fabfb067a)] -> id: education]] -> xpath: .//option[normalize-space(.) = "Graduate"]]
+Session ID: 6c021554b1c66f0aad2d020fabfb067a]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.JavascriptException: javascript error: {"status":11,"value":"Element is not currently visible and may not be manipulated"}
@@ -40,10 +40,10 @@ Session ID: 7aaa7db61e9a96648b387ab83632388f]]>
 Build info: version: '4.12.0', revision: '249f2a7d1b*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7aaa7db61e9a96648b387ab83632388f, clickElement {id=f.E7F27313B76B697A068F9238C97EF193.d.B7EBA0CEA0D9FB73DC701359E55E7549.e.231}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52463}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52463/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (7aaa7db61e9a96648b387ab83632388f)] -> id: education]] -> tag name: option]
-Session ID: 7aaa7db61e9a96648b387ab83632388f
+Command: [6c021554b1c66f0aad2d020fabfb067a, clickElement {id=f.5E42656E6E712AE811F67D053DFE16E3.d.9E18B8386C99F09DA3892454DD1E55FE.e.230}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53150}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53150/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (6c021554b1c66f0aad2d020fabfb067a)] -> id: education]] -> xpath: .//option[normalize-space(.) = "Graduate"]]
+Session ID: 6c021554b1c66f0aad2d020fabfb067a
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -57,8 +57,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
 at org.openqa.selenium.support.ui.Select.setSelected(Select.java:315)
-at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:299)
-at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:179)
+at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:119)
 at Demo.Test.test1.demoTesttwo(test1.java:49)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
