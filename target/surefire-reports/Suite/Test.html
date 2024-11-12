@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 11 10:05:00 IST 2024</td>
+<td>Started on:</td><td>Mon Nov 11 16:15:04 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>12 seconds (12515 ms)</td>
+<tr><td>Total time:</td><td>14 seconds (14056 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,62 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Demo.Test.test.demoTest()'><b>demoTest</b><br>Test class: Demo.Test.test</td>
-<td><div><pre>java.lang.AssertionError: Submit Message does not match! expected [Thank you! We will get back soon.] but found []
-	at Demo.Test.test.demoTest(test.java:48)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1034584766", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1034584766'><pre>java.lang.AssertionError: Submit Message does not match! expected [Thank you! We will get back soon.] but found []
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at Demo.Test.test.demoTest(test.java:48)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></div></td>
-<td>7</td>
-<td>Demo.Test.test@71b1176b</td></tr>
-<tr>
 <td title='Demo.Test.test1.demoTesttwo()'><b>demoTesttwo</b><br>Test class: Demo.Test.test1</td>
 <td><div><pre>org.openqa.selenium.JavascriptException: javascript error: {&quot;status&quot;:11,&quot;value&quot;:&quot;Element is not currently visible and may not be manipulated&quot;}
   (Session info: chrome=130.0.6723.117)
 Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3d9089cc3e66e782235ed489744a0df8, clickElement {id=f.EFCBA42226DB62A5CFDFA67BCF1721F0.d.524B79C1C0148861E893DF280EE374DA.e.228}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50450}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50450/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (3d9089cc3e66e782235ed489744a0df8)] -&gt; id: education]] -&gt; tag name: option]
-Session ID: 3d9089cc3e66e782235ed489744a0df8
+Command: [7aaa7db61e9a96648b387ab83632388f, clickElement {id=f.E7F27313B76B697A068F9238C97EF193.d.B7EBA0CEA0D9FB73DC701359E55E7549.e.231}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52463}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52463/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (7aaa7db61e9a96648b387ab83632388f)] -&gt; id: education]] -&gt; tag name: option]
+Session ID: 7aaa7db61e9a96648b387ab83632388f
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -146,16 +100,16 @@ Session ID: 3d9089cc3e66e782235ed489744a0df8
 	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:179)
 	at Demo.Test.test1.demoTesttwo(test1.java:49)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace873168630", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace873168630'><pre>org.openqa.selenium.JavascriptException: javascript error: {&quot;status&quot;:11,&quot;value&quot;:&quot;Element is not currently visible and may not be manipulated&quot;}
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1489946715", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1489946715'><pre>org.openqa.selenium.JavascriptException: javascript error: {&quot;status&quot;:11,&quot;value&quot;:&quot;Element is not currently visible and may not be manipulated&quot;}
   (Session info: chrome=130.0.6723.117)
 Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3d9089cc3e66e782235ed489744a0df8, clickElement {id=f.EFCBA42226DB62A5CFDFA67BCF1721F0.d.524B79C1C0148861E893DF280EE374DA.e.228}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50450}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50450/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (3d9089cc3e66e782235ed489744a0df8)] -&gt; id: education]] -&gt; tag name: option]
-Session ID: 3d9089cc3e66e782235ed489744a0df8
+Command: [7aaa7db61e9a96648b387ab83632388f, clickElement {id=f.E7F27313B76B697A068F9238C97EF193.d.B7EBA0CEA0D9FB73DC701359E55E7549.e.231}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52463}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52463/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (7aaa7db61e9a96648b387ab83632388f)] -&gt; id: education]] -&gt; tag name: option]
+Session ID: 7aaa7db61e9a96648b387ab83632388f
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -204,7 +158,21 @@ Session ID: 3d9089cc3e66e782235ed489744a0df8
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
 <td>0</td>
-<td>Demo.Test.test1@23529fee</td></tr>
+<td>Demo.Test.test1@47d90b9e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Demo.Test.test.demoTest()'><b>demoTest</b><br>Test class: Demo.Test.test</td>
+<td></td>
+<td>7</td>
+<td>Demo.Test.test@9353778</td></tr>
 </table><p>
 </body>
 </html>

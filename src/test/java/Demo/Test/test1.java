@@ -43,10 +43,10 @@ public class test1 {
 		WebElement next = driver.findElement(By.xpath("(//button[@class='btn btn-primary btn-next'])[1]"));
 		next.click();
 		
-		  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		  WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("education")));		
 		  Select w = new Select (element);
-		  w.selectByIndex(3);
+		 w.selectByVisibleText("Graduate");
 		
 		WebElement certificate = driver.findElement(By.id("certifications"));
 		certificate.sendKeys("Java, C++");
@@ -71,8 +71,8 @@ public class test1 {
 		WebElement comments = driver.findElement(By.xpath("//textarea[@class='form-control']"));
 		comments.sendKeys("Thank you");
 		WebElement submitButton = driver.findElement(By.xpath("//button[@class='btn btn-success btn-submit']"));
-		submitButton.click();
-		driver.quit();
+		//submitButton.click();
+		//driver.quit();
 	
 }
 }
