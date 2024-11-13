@@ -41,7 +41,7 @@ public class test1 {
 		next.click();
 		
 		  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		  WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("education")));
+		  WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("education")));
 		  Select w = new Select (element);
 		 w.selectByVisibleText("Graduate");
 		

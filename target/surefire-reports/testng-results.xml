@@ -2,45 +2,45 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-12T18:10:49 IST" name="Suite" finished-at="2024-11-12T18:11:23 IST" duration-ms="33522">
+  <suite started-at="2024-11-13T11:15:05 IST" name="Suite" finished-at="2024-11-13T11:15:27 IST" duration-ms="22586">
     <groups>
     </groups>
-    <test started-at="2024-11-12T18:10:49 IST" name="Test" finished-at="2024-11-12T18:11:23 IST" duration-ms="33522">
+    <test started-at="2024-11-13T11:15:05 IST" name="Test" finished-at="2024-11-13T11:15:27 IST" duration-ms="22586">
       <class name="Demo.Test.test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Demo.Test.test@9353778]" started-at="2024-11-12T18:11:12 IST" name="setup" finished-at="2024-11-12T18:11:15 IST" duration-ms="2620" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Demo.Test.test@71b1176b]" started-at="2024-11-13T11:15:17 IST" name="setup" finished-at="2024-11-13T11:15:20 IST" duration-ms="2729" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="demoTest()[pri:0, instance:Demo.Test.test@9353778]" started-at="2024-11-12T18:11:15 IST" name="demoTest" finished-at="2024-11-12T18:11:23 IST" duration-ms="7764" status="PASS">
+        <test-method signature="demoTest()[pri:0, instance:Demo.Test.test@71b1176b]" started-at="2024-11-13T11:15:20 IST" name="demoTest" finished-at="2024-11-13T11:15:27 IST" duration-ms="7294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demoTest -->
       </class> <!-- Demo.Test.test -->
       <class name="Demo.Test.test1">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Demo.Test.test1@47d90b9e]" started-at="2024-11-12T18:10:49 IST" name="setup" finished-at="2024-11-12T18:10:51 IST" duration-ms="2104" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Demo.Test.test1@23529fee]" started-at="2024-11-13T11:15:05 IST" name="setup" finished-at="2024-11-13T11:15:06 IST" duration-ms="1899" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="demoTesttwo()[pri:1, instance:Demo.Test.test1@47d90b9e]" started-at="2024-11-12T18:10:51 IST" name="demoTesttwo" finished-at="2024-11-12T18:11:12 IST" duration-ms="21003" status="FAIL">
+        <test-method signature="demoTesttwo()[pri:1, instance:Demo.Test.test1@23529fee]" started-at="2024-11-13T11:15:06 IST" name="demoTesttwo" finished-at="2024-11-13T11:15:17 IST" duration-ms="10635" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: education (tried for 20 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: education (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '4.12.0', revision: '249f2a7d1b*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53297}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53297/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4f0cc451c6b7a81e5ba22fff96b14e7a]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52458}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52458/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ccd053c43b7b5b73d42d95455d1173ae]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: education (tried for 20 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: education (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '4.12.0', revision: '249f2a7d1b*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53297}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53297/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4f0cc451c6b7a81e5ba22fff96b14e7a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52458}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52458/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ccd053c43b7b5b73d42d95455d1173ae
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-at Demo.Test.test1.demoTesttwo(test1.java:47)
+at Demo.Test.test1.demoTesttwo(test1.java:44)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
