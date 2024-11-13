@@ -37,7 +37,7 @@ public class test1 {
 		WebElement dropdown = driver.findElement(By.id("goal"));
 		Select s = new Select(dropdown);
 		s.selectByIndex(3);
-		WebElement next = driver.findElement(By.xpath("(//button[@class='btn btn-primary btn-next'])[1]"));
+		WebElement next = driver.findElement(By.xpath("(//button[text()='Next'])[1]"));
 		next.click();
 		
 		  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
