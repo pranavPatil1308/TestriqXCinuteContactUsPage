@@ -6,7 +6,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -19,9 +18,7 @@ public class test1 {
 	public static WebDriverWait wait;
 	@BeforeMethod
 	public void setup() {
-		ChromeOptions options =  new ChromeOptions();
-		options.addArguments("--headless");
-		driver=new ChromeDriver(options) ;
+		driver=new ChromeDriver() ;
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	driver.get("https://cinutedigital.com/contact-us/");
@@ -43,7 +40,7 @@ public class test1 {
 		WebElement next = driver.findElement(By.xpath("(//button[@class='btn btn-primary btn-next'])[1]"));
 		next.click();
 		
-		  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		  WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("education")));
 		  Select w = new Select (element);
 		 w.selectByVisibleText("Graduate");

@@ -1,17 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 13.838 s <<< FAILURE! - in TestSuite
-demoTesttwo(Demo.Test.test1)  Time elapsed: 0.745 s  <<< FAILURE!
-org.openqa.selenium.JavascriptException: 
-javascript error: {"status":11,"value":"Element is not currently visible and may not be manipulated"}
-  (Session info: chrome=130.0.6723.117)
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 33.851 s <<< FAILURE! - in TestSuite
+demoTesttwo(Demo.Test.test1)  Time elapsed: 21.012 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.id: education (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: '4.12.0', revision: '249f2a7d1b*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c021554b1c66f0aad2d020fabfb067a, clickElement {id=f.5E42656E6E712AE811F67D053DFE16E3.d.9E18B8386C99F09DA3892454DD1E55FE.e.230}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53150}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53150/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (6c021554b1c66f0aad2d020fabfb067a)] -> id: education]] -> xpath: .//option[normalize-space(.) = "Graduate"]]
-Session ID: 6c021554b1c66f0aad2d020fabfb067a
-	at Demo.Test.test1.demoTesttwo(test1.java:49)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53297}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53297/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f0cc451c6b7a81e5ba22fff96b14e7a
+	at Demo.Test.test1.demoTesttwo(test1.java:47)
 
