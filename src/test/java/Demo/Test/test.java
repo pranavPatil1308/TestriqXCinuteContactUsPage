@@ -25,9 +25,9 @@ public static WebDriverWait wait;
 	@BeforeMethod
 	public void setup() {
 //		System.setProperty("webdriver.chrome.driver", "C:\\Users\\L-51\\eclipse-workspace\\Test\\src\\main\\java\\Demo\\Test\\chromedriver.exe");
-		//ChromeOptions options =  new ChromeOptions();
-		//options.addArguments("--headless");
-		driver=new ChromeDriver() ;
+		ChromeOptions options =  new ChromeOptions();
+		options.addArguments("--headless");
+		driver=new ChromeDriver(options) ;
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://testriq.com/contact-us");

@@ -19,8 +19,9 @@ public class test1 {
 	public static WebDriverWait wait;
 	@BeforeMethod
 	public void setup() {
-		
-		driver=new ChromeDriver() ;
+		ChromeOptions options =  new ChromeOptions();
+		options.addArguments("--headless");
+		driver=new ChromeDriver(options) ;
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	driver.get("https://cinutedigital.com/contact-us/");
@@ -39,8 +40,11 @@ public class test1 {
 		WebElement dropdown = driver.findElement(By.id("goal"));
 		Select s = new Select(dropdown);
 		s.selectByIndex(3);
-		WebElement next = driver.findElement(By.xpath("(//button[text()='Next'])[1]"));
-		next.click();		
+		
+		 WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));		 
+		 WebElement element1 = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("(//button[text()='Next'])[1]")));
+		    element1.click();
+		    
 		  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		  WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("education")));
 		  Select w = new Select (element);
