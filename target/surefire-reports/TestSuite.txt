@@ -1,21 +1,21 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 13.451 s <<< FAILURE! - in TestSuite
-demoTesttwo(Demo.Test.test1)  Time elapsed: 0.648 s  <<< FAILURE!
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 13.688 s <<< FAILURE! - in TestSuite
+demoTesttwo(Demo.Test.test1)  Time elapsed: 0.865 s  <<< FAILURE!
 org.openqa.selenium.JavascriptException: 
 javascript error: {"status":11,"value":"Element is not currently visible and may not be manipulated"}
   (Session info: chrome=130.0.6723.117)
 Build info: version: '4.12.0', revision: '249f2a7d1b*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [acd9c4fb00a5c7d786ad99bb7276b9f6, clickElement {id=f.FD8C712DECBFD1CECA73BC29F3E8C196.d.F7FC0B78C5B53F2D2088436BF64C0320.e.228}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50490}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50490/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (acd9c4fb00a5c7d786ad99bb7276b9f6)] -> id: education]] -> xpath: .//option[normalize-space(.) = "Graduate"]]
-Session ID: acd9c4fb00a5c7d786ad99bb7276b9f6
-	at Demo.Test.test1.demoTesttwo(test1.java:49)
+Command: [da19393032a4a8970d774663edbf3baf, clickElement {id=f.8C67AE1B621C8148BAB4B596315811D0.d.26DCBA09CD7C1D53FBD326F29A9BEDCE.e.311}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50859}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50859/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (da19393032a4a8970d774663edbf3baf)] -> id: education]] -> xpath: .//option[normalize-space(.) = "Graduate"]]
+Session ID: da19393032a4a8970d774663edbf3baf
+	at Demo.Test.test1.demoTesttwo(test1.java:47)
 
-demoTest(Demo.Test.test)  Time elapsed: 7.88 s  <<< FAILURE!
-java.lang.AssertionError: Submit Message does not match! expected [Thank you! We will get back soon.] but found []
-	at Demo.Test.test.demoTest(test.java:51)
+demoTest(Demo.Test.test)  Time elapsed: 7.384 s  <<< FAILURE!
+java.lang.AssertionError: Thank you! We will get back soon. expected [Thank you! We will get back soon.] but found [Submit Message does not match!]
+	at Demo.Test.test.demoTest(test.java:56)
 
