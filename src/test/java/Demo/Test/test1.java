@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -18,7 +19,9 @@ public class test1 {
 	public static WebDriverWait wait;
 	@BeforeMethod
 	public void setup() {
-		driver=new ChromeDriver() ;
+		ChromeOptions options =  new ChromeOptions();
+		options.addArguments("--headless");
+		driver=new ChromeDriver(options) ;
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	driver.get("https://cinutedigital.com/contact-us/");
@@ -38,8 +41,7 @@ public class test1 {
 		Select s = new Select(dropdown);
 		s.selectByIndex(3);
 		WebElement next = driver.findElement(By.xpath("(//button[text()='Next'])[1]"));
-		next.click();
-		
+		next.click();		
 		  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		  WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("education")));
 		  Select w = new Select (element);
@@ -68,7 +70,7 @@ public class test1 {
 		WebElement comments = driver.findElement(By.xpath("//textarea[@class='form-control']"));
 		comments.sendKeys("Thank you");
 		WebElement submitButton = driver.findElement(By.xpath("//button[@class='btn btn-success btn-submit']"));
-	    submitButton.click();
+		submitButton.click();
 		driver.quit();
 	
 }
