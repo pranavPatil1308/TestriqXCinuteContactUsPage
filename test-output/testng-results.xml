@@ -2,28 +2,53 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-14T10:26:14 IST" name="Default suite" finished-at="2024-11-14T10:26:25 IST" duration-ms="10302">
+  <suite started-at="2024-11-18T10:01:48 IST" name="Default suite" finished-at="2024-11-18T10:01:51 IST" duration-ms="2372">
     <groups>
     </groups>
-    <test started-at="2024-11-14T10:26:14 IST" name="Default test" finished-at="2024-11-14T10:26:25 IST" duration-ms="10302">
-      <class name="Demo.Test.test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Demo.Test.test@3270d194]" started-at="2024-11-14T10:26:14 IST" name="setup" finished-at="2024-11-14T10:26:18 IST" duration-ms="3594" status="PASS">
+    <test started-at="2024-11-18T10:01:48 IST" name="Default test" finished-at="2024-11-18T10:01:51 IST" duration-ms="2372">
+      <class name="Demo.Test.test1">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Demo.Test.test1@692f203f]" started-at="2024-11-18T10:01:48 IST" name="setup" finished-at="2024-11-18T10:01:50 IST" duration-ms="1756" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="demoTest()[pri:0, instance:Demo.Test.test@3270d194]" started-at="2024-11-14T10:26:18 IST" name="demoTest" finished-at="2024-11-14T10:26:25 IST" duration-ms="6680" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="demoTesttwo()[pri:1, instance:Demo.Test.test1@692f203f]" started-at="2024-11-18T10:01:50 IST" name="demoTesttwo" finished-at="2024-11-18T10:01:51 IST" duration-ms="587" status="FAIL">
+          <exception class="org.openqa.selenium.JavascriptException">
             <message>
-              <![CDATA[Thank you! We will get back soon. expected [Thank you! We will get back soon.] but found [Submit Message does not match!]]]>
+              <![CDATA[javascript error: {"status":11,"value":"Element is not currently visible and may not be manipulated"}
+  (Session info: chrome=130.0.6723.119)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aa3b46315a9f45a866a68f378d351799, clickElement {id=f.D6BD507FEF148D74C7875BB823FC3229.d.977DFB6993F1CFF3B168A14595365F11.e.233}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58198}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58198/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (aa3b46315a9f45a866a68f378d351799)] -> id: education]] -> xpath: .//option[normalize-space(.) = "Graduate"]]
+Session ID: aa3b46315a9f45a866a68f378d351799]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Thank you! We will get back soon. expected [Thank you! We will get back soon.] but found [Submit Message does not match!]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at Demo.Test.test.demoTest(test.java:56)
+              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: {"status":11,"value":"Element is not currently visible and may not be manipulated"}
+  (Session info: chrome=130.0.6723.119)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aa3b46315a9f45a866a68f378d351799, clickElement {id=f.D6BD507FEF148D74C7875BB823FC3229.d.977DFB6993F1CFF3B168A14595365F11.e.233}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58198}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58198/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (aa3b46315a9f45a866a68f378d351799)] -> id: education]] -> xpath: .//option[normalize-space(.) = "Graduate"]]
+Session ID: aa3b46315a9f45a866a68f378d351799
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at org.openqa.selenium.support.ui.Select.setSelected(Select.java:315)
+at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:119)
+at Demo.Test.test1.demoTesttwo(test1.java:51)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -52,11 +77,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.JavascriptException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- demoTest -->
-      </class> <!-- Demo.Test.test -->
+        </test-method> <!-- demoTesttwo -->
+      </class> <!-- Demo.Test.test1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
