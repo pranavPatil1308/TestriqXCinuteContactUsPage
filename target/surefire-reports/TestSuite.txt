@@ -1,21 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 15.925 s <<< FAILURE! - in TestSuite
-demoTesttwo(Demo.Test.test1)  Time elapsed: 2.745 s  <<< FAILURE!
-org.openqa.selenium.JavascriptException: 
-javascript error: {"status":11,"value":"Element is not currently visible and may not be manipulated"}
-  (Session info: chrome=130.0.6723.119)
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [963d17382fa50ab8c3070b210d63b538, clickElement {id=f.AFB24D0919330C4FD4EFA20DD8A2E888.d.FA649DE8CEB9271BB7C69AC6AA438767.e.319}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58298}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58298/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (963d17382fa50ab8c3070b210d63b538)] -> id: education]] -> xpath: .//option[normalize-space(.) = "Graduate"]]
-Session ID: 963d17382fa50ab8c3070b210d63b538
-	at Demo.Test.test1.demoTesttwo(test1.java:50)
-
-demoTest(Demo.Test.test)  Time elapsed: 7.522 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 23.869 s <<< FAILURE! - in TestSuite
+demoTest(Demo.Test.test)  Time elapsed: 8.187 s  <<< FAILURE!
 java.lang.AssertionError: Submit Message does not match! expected [Thank you! We will get back soon.] but found []
 	at Demo.Test.test.demoTest(test.java:54)
 

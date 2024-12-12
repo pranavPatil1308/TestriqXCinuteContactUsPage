@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-18T10:03:17 IST" name="Suite" finished-at="2024-11-18T10:03:33 IST" duration-ms="15516">
+  <suite started-at="2024-12-12T09:54:49 IST" name="Suite" finished-at="2024-12-12T09:55:13 IST" duration-ms="23458">
     <groups>
     </groups>
-    <test started-at="2024-11-18T10:03:17 IST" name="Test" finished-at="2024-11-18T10:03:33 IST" duration-ms="15516">
+    <test started-at="2024-12-12T09:54:49 IST" name="Test" finished-at="2024-12-12T09:55:13 IST" duration-ms="23458">
       <class name="Demo.Test.test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Demo.Test.test@769e7ee8]" started-at="2024-11-18T10:03:22 IST" name="setup" finished-at="2024-11-18T10:03:25 IST" duration-ms="3071" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Demo.Test.test@769e7ee8]" started-at="2024-12-12T09:55:01 IST" name="setup" finished-at="2024-12-12T09:55:04 IST" duration-ms="3127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="demoTest()[pri:0, instance:Demo.Test.test@769e7ee8]" started-at="2024-11-18T10:03:25 IST" name="demoTest" finished-at="2024-11-18T10:03:33 IST" duration-ms="7521" status="FAIL">
+        <test-method signature="demoTest()[pri:0, instance:Demo.Test.test@769e7ee8]" started-at="2024-12-12T09:55:04 IST" name="demoTest" finished-at="2024-12-12T09:55:13 IST" duration-ms="8183" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Submit Message does not match! expected [Thank you! We will get back soon.] but found []]]>
@@ -62,81 +62,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
         </test-method> <!-- demoTest -->
       </class> <!-- Demo.Test.test -->
       <class name="Demo.Test.test1">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Demo.Test.test1@7f1302d6]" started-at="2024-11-18T10:03:17 IST" name="setup" finished-at="2024-11-18T10:03:19 IST" duration-ms="2146" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Demo.Test.test1@7f1302d6]" started-at="2024-12-12T09:54:49 IST" name="setup" finished-at="2024-12-12T09:54:56 IST" duration-ms="6481" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="demoTesttwo()[pri:1, instance:Demo.Test.test1@7f1302d6]" started-at="2024-11-18T10:03:19 IST" name="demoTesttwo" finished-at="2024-11-18T10:03:22 IST" duration-ms="2739" status="FAIL">
-          <exception class="org.openqa.selenium.JavascriptException">
-            <message>
-              <![CDATA[javascript error: {"status":11,"value":"Element is not currently visible and may not be manipulated"}
-  (Session info: chrome=130.0.6723.119)
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [963d17382fa50ab8c3070b210d63b538, clickElement {id=f.AFB24D0919330C4FD4EFA20DD8A2E888.d.FA649DE8CEB9271BB7C69AC6AA438767.e.319}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58298}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58298/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (963d17382fa50ab8c3070b210d63b538)] -> id: education]] -> xpath: .//option[normalize-space(.) = "Graduate"]]
-Session ID: 963d17382fa50ab8c3070b210d63b538]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: {"status":11,"value":"Element is not currently visible and may not be manipulated"}
-  (Session info: chrome=130.0.6723.119)
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [963d17382fa50ab8c3070b210d63b538, clickElement {id=f.AFB24D0919330C4FD4EFA20DD8A2E888.d.FA649DE8CEB9271BB7C69AC6AA438767.e.319}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58298}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58298/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (963d17382fa50ab8c3070b210d63b538)] -> id: education]] -> xpath: .//option[normalize-space(.) = "Graduate"]]
-Session ID: 963d17382fa50ab8c3070b210d63b538
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at org.openqa.selenium.support.ui.Select.setSelected(Select.java:315)
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:119)
-at Demo.Test.test1.demoTesttwo(test1.java:50)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.JavascriptException -->
+        <test-method signature="demoTesttwo()[pri:1, instance:Demo.Test.test1@7f1302d6]" started-at="2024-12-12T09:54:56 IST" name="demoTesttwo" finished-at="2024-12-12T09:55:01 IST" duration-ms="5629" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demoTesttwo -->

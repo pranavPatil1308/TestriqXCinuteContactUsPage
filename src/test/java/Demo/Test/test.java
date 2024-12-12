@@ -48,7 +48,8 @@ public static WebDriverWait wait;
 		WebElement sendbutton = driver.findElement(By.xpath("(//button[@type='submit'])[1]"));
 		sendbutton.click();
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	 WebElement thankyouMessage = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='mf-response-msg']/p[text()='Thank you! We will get back soon.']")));
+		 WebElement thankyouMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='mf-response-msg']/p[text()='Thank you! We will get back soon.']")));
+
 	   String actualMessage = thankyouMessage.getText();
 	   String expectedMessage = "Thank you! We will get back soon.";
 	   Assert.assertEquals(actualMessage, expectedMessage,"Submit Message does not match!");
