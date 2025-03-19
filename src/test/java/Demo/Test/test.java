@@ -30,7 +30,7 @@ public static WebDriverWait wait;
 		driver=new ChromeDriver(options) ;
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("https://testriq.com/contact-us");
+		driver.get("https://testriq.com/business-enquiry");
 		
 	}
 	
