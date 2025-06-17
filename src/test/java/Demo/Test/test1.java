@@ -74,10 +74,10 @@ public class test1 {
 		Select f = new Select (language);
 		f.selectByIndex(3);
 
-		WebElement comments = driver.findElement(By.xpath("//textarea[@class='form-control']"));
+		WebElement comments = driver.findElement(By.xpath("//textarea[@class='form-control is-invalid']"));
 		comments.sendKeys("Thank you");
 		
-		WebElement pinCodeElement1 = driver.findElement(By.xpath("//textarea[@class='form-control']"));
+		WebElement pinCodeElement1 = driver.findElement(By.xpath("//textarea[@class='form-control is-invalid']"));
 		Actions actions1 = new Actions(driver);
 		actions1.moveToElement(pinCodeElement1).perform();
 		
