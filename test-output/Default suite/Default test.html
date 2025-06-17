@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 17 12:58:14 IST 2025</td>
+<td>Started on:</td><td>Tue Jun 17 13:18:43 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>19 seconds (19689 ms)</td>
+<tr><td>Total time:</td><td>7 seconds (7913 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Demo.Test.test1.demoTesttwo()'><b>demoTesttwo</b><br>Test class: Demo.Test.test1</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//textarea[@class=&apos;form-control is-invalid&apos;]&quot;}
+<td title='Demo.Test.test.demoTest()'><b>demoTest</b><br>Test class: Demo.Test.test</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (594, 501)
   (Session info: chrome=137.0.7151.104)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4d5f713118a0d9d80e211068f00a2052, findElement {using=xpath, value=//textarea[@class=&apos;form-control is-invalid&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56736}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56736/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4d5f713118a0d9d80e211068f00a2052
+Command: [3e4731886eeccd20fbec9ade66370f22, clickElement {id=f.D5D13E23493F4FF5AE5BC337E34AB320.d.6812DCAD2E2B8D296C134CAD96BB4E25.e.63}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58140}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58140/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3e4731886eeccd20fbec9ade66370f22)] -&gt; xpath: (//div[@class=&apos;mf_select__menu-list css-11unzgr&apos;]/div)[3]]
+Session ID: 3e4731886eeccd20fbec9ade66370f22
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -96,11 +96,9 @@ Session ID: 4d5f713118a0d9d80e211068f00a2052
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at Demo.Test.test1.demoTesttwo(test1.java:77)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at Demo.Test.test.demoTest(test.java:49)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -127,16 +125,16 @@ Session ID: 4d5f713118a0d9d80e211068f00a2052
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1468192631", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1468192631'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//textarea[@class=&apos;form-control is-invalid&apos;]&quot;}
+</pre></div><a href='#' onClick='toggleBox("stack-trace62309924", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace62309924'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (594, 501)
   (Session info: chrome=137.0.7151.104)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4d5f713118a0d9d80e211068f00a2052, findElement {using=xpath, value=//textarea[@class=&apos;form-control is-invalid&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56736}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56736/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4d5f713118a0d9d80e211068f00a2052
+Command: [3e4731886eeccd20fbec9ade66370f22, clickElement {id=f.D5D13E23493F4FF5AE5BC337E34AB320.d.6812DCAD2E2B8D296C134CAD96BB4E25.e.63}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58140}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58140/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3e4731886eeccd20fbec9ade66370f22)] -&gt; xpath: (//div[@class=&apos;mf_select__menu-list css-11unzgr&apos;]/div)[3]]
+Session ID: 3e4731886eeccd20fbec9ade66370f22
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -147,11 +145,9 @@ Session ID: 4d5f713118a0d9d80e211068f00a2052
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at Demo.Test.test1.demoTesttwo(test1.java:77)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at Demo.Test.test.demoTest(test.java:49)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -179,8 +175,8 @@ Session ID: 4d5f713118a0d9d80e211068f00a2052
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>11</td>
-<td>Demo.Test.test1@4d5d943d</td></tr>
+<td>1</td>
+<td>Demo.Test.test@7c7b252e</td></tr>
 </table><p>
 </body>
 </html>

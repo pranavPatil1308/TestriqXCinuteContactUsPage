@@ -81,7 +81,10 @@ public class test1 {
 		Actions actions1 = new Actions(driver);
 		actions1.moveToElement(pinCodeElement1).perform();
 		
-		WebElement submitButton = driver.findElement(By.xpath("//button[@class='btn btn-success btn-submit']"));
+		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement submitButton = wait2.until(ExpectedConditions.elementToBeClickable(
+			    By.xpath("//button[@class='btn btn-success btn-submit']")
+			));
 		submitButton.click();
 		driver.quit();
 	
