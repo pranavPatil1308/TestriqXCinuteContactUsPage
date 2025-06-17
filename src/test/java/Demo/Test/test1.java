@@ -76,6 +76,11 @@ public class test1 {
 
 		WebElement comments = driver.findElement(By.xpath("//textarea[@class='form-control']"));
 		comments.sendKeys("Thank you");
+		
+		WebElement pinCodeElement1 = driver.findElement(By.xpath("//textarea[@class='form-control']"));
+		Actions actions1 = new Actions(driver);
+		actions1.moveToElement(pinCodeElement1).perform();
+		
 		WebElement submitButton = driver.findElement(By.xpath("//button[@class='btn btn-success btn-submit']"));
 		submitButton.click();
 		driver.quit();
