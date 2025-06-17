@@ -42,7 +42,11 @@ public static WebDriverWait wait;
 		driver.findElement(By.xpath("(//input[@class='mf-input mf-conditional-input'])[2]")).sendKeys("pranav.patil@testriq.com");
 		driver.findElement(By.xpath("(//label[@class='mf-input-label'])[3]/following-sibling::input")).sendKeys("Test message");
 		driver.findElement(By.xpath("//div[@class='mf_select__control css-yk16xz-control']")).click();
-		driver.findElement(By.xpath("(//div[@class='mf_select__menu-list css-11unzgr']/div)[3]")).click();
+		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement dropdownOption = wait1.until(ExpectedConditions.visibilityOfElementLocated(
+		    By.xpath("(//div[@class='mf_select__menu-list css-11unzgr']/div)[3]")
+		));
+		dropdownOption.click();
 		driver.findElement(By.xpath("//textarea[@class='mf-input mf-textarea mf-conditional-input']")).sendKeys("This is a test mail");
 		WebElement w= driver.findElement(By.xpath("//div[@class='mf_select__control css-yk16xz-control']"));
 		w.click();

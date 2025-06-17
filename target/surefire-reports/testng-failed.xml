@@ -9,6 +9,12 @@
           <include name="demoTesttwo"/>
         </methods>
       </class> <!-- Demo.Test.test1 -->
+      <class name="Demo.Test.test">
+        <methods>
+          <include name="demoTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Demo.Test.test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

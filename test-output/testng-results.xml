@@ -2,38 +2,38 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-17T12:03:01 IST" name="Default suite" finished-at="2025-06-17T12:03:08 IST" duration-ms="6994">
+  <suite started-at="2025-06-17T12:26:35 IST" name="Default suite" finished-at="2025-06-17T12:26:42 IST" duration-ms="6532">
     <groups>
     </groups>
-    <test started-at="2025-06-17T12:03:01 IST" name="Default test" finished-at="2025-06-17T12:03:08 IST" duration-ms="6994">
-      <class name="Demo.Test.test1">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Demo.Test.test1@4d5d943d]" started-at="2025-06-17T12:03:01 IST" name="setup" finished-at="2025-06-17T12:03:06 IST" duration-ms="5432" status="PASS">
+    <test started-at="2025-06-17T12:26:35 IST" name="Default test" finished-at="2025-06-17T12:26:42 IST" duration-ms="6532">
+      <class name="Demo.Test.test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Demo.Test.test@7c7b252e]" started-at="2025-06-17T12:26:35 IST" name="setup" finished-at="2025-06-17T12:26:40 IST" duration-ms="4849" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="demoTesttwo()[pri:1, instance:Demo.Test.test1@4d5d943d]" started-at="2025-06-17T12:03:06 IST" name="demoTesttwo" finished-at="2025-06-17T12:03:08 IST" duration-ms="1536" status="FAIL">
+        <test-method signature="demoTest()[pri:0, instance:Demo.Test.test@7c7b252e]" started-at="2025-06-17T12:26:40 IST" name="demoTest" finished-at="2025-06-17T12:26:42 IST" duration-ms="1644" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element is not clickable at point (74, 570)
+              <![CDATA[element click intercepted: Element is not clickable at point (594, 501)
   (Session info: chrome=137.0.7151.104)
 Build info: version: '4.12.0', revision: '249f2a7d1b*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1dcd89a9cf79fca2ef92018bb1a7f378, clickElement {id=f.C54BC4D719E25E5870869A4AC4FDC4C4.d.ACAE7815A1B0F7CD308F7AE22E7BCDC2.e.213}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52824/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (1dcd89a9cf79fca2ef92018bb1a7f378)] -> xpath: (//button[text()='Next'])[1]]
-Session ID: 1dcd89a9cf79fca2ef92018bb1a7f378]]>
+Command: [106faab705f0079c381d256477218f75, clickElement {id=f.1ABCC9A127550A37432F9EDF052EAB06.d.AEBCEFB4A86ECC21E5F0A4A27E95463C.e.63}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54597/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (106faab705f0079c381d256477218f75)] -> xpath: (//div[@class='mf_select__menu-list css-11unzgr']/div)[3]]
+Session ID: 106faab705f0079c381d256477218f75]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (74, 570)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (594, 501)
   (Session info: chrome=137.0.7151.104)
 Build info: version: '4.12.0', revision: '249f2a7d1b*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1dcd89a9cf79fca2ef92018bb1a7f378, clickElement {id=f.C54BC4D719E25E5870869A4AC4FDC4C4.d.ACAE7815A1B0F7CD308F7AE22E7BCDC2.e.213}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52824/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (1dcd89a9cf79fca2ef92018bb1a7f378)] -> xpath: (//button[text()='Next'])[1]]
-Session ID: 1dcd89a9cf79fca2ef92018bb1a7f378
+Command: [106faab705f0079c381d256477218f75, clickElement {id=f.1ABCC9A127550A37432F9EDF052EAB06.d.AEBCEFB4A86ECC21E5F0A4A27E95463C.e.63}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54597/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (106faab705f0079c381d256477218f75)] -> xpath: (//div[@class='mf_select__menu-list css-11unzgr']/div)[3]]
+Session ID: 106faab705f0079c381d256477218f75
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -46,7 +46,7 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at Demo.Test.test1.demoTesttwo(test1.java:46)
+at Demo.Test.test.demoTest(test.java:45)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -78,8 +78,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- demoTesttwo -->
-      </class> <!-- Demo.Test.test1 -->
+        </test-method> <!-- demoTest -->
+      </class> <!-- Demo.Test.test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
