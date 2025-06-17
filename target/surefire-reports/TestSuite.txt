@@ -1,30 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 22.629 s <<< FAILURE! - in TestSuite
-demoTesttwo(Demo.Test.test1)  Time elapsed: 2.158 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 21.946 s <<< FAILURE! - in TestSuite
+demoTesttwo(Demo.Test.test1)  Time elapsed: 2.409 s  <<< FAILURE!
 org.openqa.selenium.ElementClickInterceptedException: 
 element click intercepted: Element is not clickable at point (74, 537)
   (Session info: chrome=137.0.7151.104)
 Build info: version: '4.12.0', revision: '249f2a7d1b*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bb928255687878315904e7147b873a57, clickElement {id=f.360C5687E163CAF9B767C01DB790C2A8.d.5BFD34694B195748B97236081DFFA60B.e.209}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49951}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49951/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (bb928255687878315904e7147b873a57)] -> xpath: (//button[text()='Next'])[1]]
-Session ID: bb928255687878315904e7147b873a57
+Command: [191e61f26a0d61289081971da51fac55, clickElement {id=f.0B9E2510CD6A07C9B746D6344EC350E4.d.E663A1DEB75CBD0D5281F6FD36D3D896.e.214}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51838}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51838/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (191e61f26a0d61289081971da51fac55)] -> xpath: (//button[text()='Next'])[1]]
+Session ID: 191e61f26a0d61289081971da51fac55
 	at Demo.Test.test1.demoTesttwo(test1.java:46)
-
-demoTest(Demo.Test.test)  Time elapsed: 10.465 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@class='mf-input mf-conditional-input'])[3]"}
-  (Session info: chrome=137.0.7151.104)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.12.0', revision: '249f2a7d1b*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [93f1fddf5e25c721b3f2853d0795d4b2, findElement {using=xpath, value=(//input[@class='mf-input mf-conditional-input'])[3]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50017}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50017/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 93f1fddf5e25c721b3f2853d0795d4b2
-	at Demo.Test.test.demoTest(test.java:43)
 

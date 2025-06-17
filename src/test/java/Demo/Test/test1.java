@@ -41,7 +41,11 @@ public class test1 {
 		Select s = new Select(dropdown);
 		s.selectByIndex(3);
 		
-		 WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));		 
+		WebElement pinCodeElement = driver.findElement(By.id("pinCode"));
+		Actions actions = new Actions(driver);
+        actions.moveToElement(pinCodeElement).perform();
+		
+		 WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(20));		 
 		 WebElement element1 = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("(//button[text()='Next'])[1]")));
 		    element1.click();
 		    
