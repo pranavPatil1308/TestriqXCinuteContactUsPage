@@ -20,8 +20,8 @@ public class test1 {
 	@BeforeMethod
 	public void setup() {
 		ChromeOptions options =  new ChromeOptions();
-		options.addArguments("--headless");
-		driver=new ChromeDriver(options) ;
+		//options.addArguments("--headless");
+		driver=new ChromeDriver() ;
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	driver.get("https://cinutedigital.com/contact-us/");
