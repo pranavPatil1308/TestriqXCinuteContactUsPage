@@ -55,7 +55,7 @@ public static WebDriverWait wait;
 		WebElement w= driver.findElement(By.xpath("//div[@class='mf_select__control css-yk16xz-control']"));
 		w.click();
 		
-		WebElement scroll = driver.findElement(By.xpath("(//input[@class='mf-input '])[2]"));
+		WebElement scroll = driver.findElement(By.xpath("//div[@class='mf-btn-wraper mf-conditional-input']/button"));
 		Actions actions = new Actions(driver);
         actions.moveToElement(scroll).perform();
 		
