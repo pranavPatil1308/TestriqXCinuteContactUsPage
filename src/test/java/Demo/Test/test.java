@@ -55,12 +55,14 @@ public static WebDriverWait wait;
 		WebElement w= driver.findElement(By.xpath("//div[@class='mf_select__control css-yk16xz-control']"));
 		w.click();
 		
+	
+		
+
+		driver.findElement(By.xpath("(//div[@class='mf_select__menu-list css-11unzgr']/div)[2]")).click();
 		WebElement scroll = driver.findElement(By.xpath("//div[@class='mf-btn-wraper mf-conditional-input']/button"));
 		Actions actions = new Actions(driver);
         actions.moveToElement(scroll).perform();
-		
-		
-		driver.findElement(By.xpath("(//div[@class='mf_select__menu-list css-11unzgr']/div)[2]")).click();
+        
 		WebElement sendbutton = driver.findElement(By.xpath("//div[@class='mf-btn-wraper mf-conditional-input']/button"));
 		sendbutton.click();
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
