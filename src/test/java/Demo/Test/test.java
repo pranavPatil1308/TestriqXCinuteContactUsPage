@@ -47,6 +47,7 @@ public static WebDriverWait wait;
 		    By.xpath("(//div[@class='mf_select__menu-list css-11unzgr']/div)[3]")
 		));
 		dropdownOption.click();
+		driver.findElement(By.xpath("(//input[@class='mf-input '])[2]")).sendKeys("This is a test mail");
 
 
 		driver.findElement(By.xpath("//textarea[@class='mf-input mf-textarea mf-conditional-input']")).sendKeys("This is a test mail");
