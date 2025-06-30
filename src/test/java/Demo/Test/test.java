@@ -49,6 +49,10 @@ public static WebDriverWait wait;
 		dropdownOption.click();
 		driver.findElement(By.xpath("(//input[@class='mf-input '])[2]")).sendKeys("This is a test mail");
 
+		WebElement scroll = driver.findElement(By.xpath("(//input[@class='mf-input '])[2]"));
+		Actions actions = new Actions(driver);
+        actions.moveToElement(scroll).perform();
+		
 
 		driver.findElement(By.xpath("//textarea[@class='mf-input mf-textarea mf-conditional-input']")).sendKeys("This is a test mail");
 		WebElement w= driver.findElement(By.xpath("//div[@class='mf_select__control css-yk16xz-control']"));
