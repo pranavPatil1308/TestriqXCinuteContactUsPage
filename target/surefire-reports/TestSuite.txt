@@ -1,17 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 14.893 s <<< FAILURE! - in TestSuite
-demoTest(Demo.Test.test)  Time elapsed: 2.205 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 17.519 s <<< FAILURE! - in TestSuite
+demoTest(Demo.Test.test)  Time elapsed: 2.354 s  <<< FAILURE!
 org.openqa.selenium.ElementClickInterceptedException: 
 element click intercepted: Element is not clickable at point (635, 656)
   (Session info: chrome=137.0.7151.104)
 Build info: version: '4.12.0', revision: '249f2a7d1b*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ac2c2b85bd40936e1657271d4284af90, clickElement {id=f.1B074E10A22FF21B57ABE3DD356E46D7.d.50331B47E4E0E5CB4BB060B95118B5E4.e.94}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53784}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53784/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ac2c2b85bd40936e1657271d4284af90)] -> xpath: (//button[@type='submit'])[1]]
-Session ID: ac2c2b85bd40936e1657271d4284af90
-	at Demo.Test.test.demoTest(test.java:57)
+Command: [a23318e9e2de2d787449cb76688c879e, clickElement {id=f.3CFAABDA94AE2CE31326048DC6E1FF0C.d.5A50E135494D2BF6643EDA5319A7CAA7.e.94}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\TESTRI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54922}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54922/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a23318e9e2de2d787449cb76688c879e)] -> xpath: (//button[@type='submit'])[1]]
+Session ID: a23318e9e2de2d787449cb76688c879e
+	at Demo.Test.test.demoTest(test.java:58)
 

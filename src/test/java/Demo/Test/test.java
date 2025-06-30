@@ -54,7 +54,7 @@ public static WebDriverWait wait;
 		WebElement w= driver.findElement(By.xpath("//div[@class='mf_select__control css-yk16xz-control']"));
 		w.click();
 		driver.findElement(By.xpath("(//div[@class='mf_select__menu-list css-11unzgr']/div)[2]")).click();
-		WebElement sendbutton = driver.findElement(By.xpath("(//button[@type='submit'])[1]"));
+		WebElement sendbutton = driver.findElement(By.xpath("//div[@class='mf-btn-wraper mf-conditional-input']/button"));
 		sendbutton.click();
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		 WebElement thankyouMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='mf-response-msg']/p[text()='Thank you! We will get back soon.']")));
